@@ -16,7 +16,7 @@
   <!-- CSS Files -->
   <!-- CSS Files -->
 
-<link href="assets/css/now-ui-kit.css?v=1.2.0" rel="stylesheet" />
+<link href="assets/css/now-ui-kit.css?v=1.2.0" rel="stylesheet" type="text/css" />
   <link href="assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
@@ -26,7 +26,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/1.6.6/lity.js"></script>
   
  <link href="assets/css/index-customize.css" rel="stylesheet" type="text/css">
- <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="assets/js/smooth-scroll.min.js"></script>
+  <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
 <script>
 $(window).scroll(function(){
 var st = $(window).scrollTop();
@@ -37,6 +38,11 @@ $(".imgbox img").attr("src", "assets/img/header-logo-white.png");
 }
 });
 </script>
+ <script>
+  var scroll = new SmoothScroll('a[href*="#"]',{
+  header: '[data-scroll-header]'
+});
+   </script>
 </head>
 
 <body class="index-page sidebar-collapse">
@@ -54,32 +60,24 @@ $(".imgbox img").attr("src", "assets/img/header-logo-white.png");
       </div>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
-          <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+          <li class="nav-item">
+            <a href="#promo" class="nav-link">
               <i class="material-icons">apps</i> プロモーションムービー
             </a>
-            <div class="dropdown-menu dropdown-with-icons">
-              <a href="./index.html" class="dropdown-item">
-                <i class="material-icons">layers</i> All Components
-              </a>
-              <a href="https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html" class="dropdown-item">
-                <i class="material-icons">content_paste</i> Documentation
-              </a>
-            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
+            <a class="nav-link" href="#interview">
               <i class="material-icons">cloud_download</i> インタビュー動画
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.creative-tim.com/product/material-kit-pro" target="_blank">
+            <a class="nav-link" href="#recipe">
               <i class="material-icons">unarchive</i> レシピ動画
             </a>
           </li>
           <li class="nav-item"> 
-            <a class="nav-link" href="https://www.creative-tim.com/product/material-kit-pro" target="_blank">
-              <i class="material-icons">unarchive</i> レシピ動画 
+            <a class="nav-link" href="#motion">
+              <i class="material-icons">unarchive</i> 運動動画 
             </a> 
           </li>
           
@@ -103,7 +101,7 @@ $(".imgbox img").attr("src", "assets/img/header-logo-white.png");
       </div>
     </div>
   </nav>
-  <div class="page-header header-filter clear-filter purple-filter" data-parallax="true" style="background-image: url('./assets/img/Herobanner-DYT-2398x863px.jpg');">
+  <div class="page-header header-filter clear-filter purple-filte" data-parallax="true" style="background-image: url('./assets/img/Herobanner-DYT-2398x863px.jpg');">
     <div class="container">
       <div class="row">
         <div class="col-md-8 ml-auto mr-auto">
@@ -115,6 +113,8 @@ $(".imgbox img").attr("src", "assets/img/header-logo-white.png");
       </div>
     </div>
   </div>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<div id="page_top"><a href="#"></a></div>
   
   
   
@@ -127,284 +127,143 @@ $(".imgbox img").attr("src", "assets/img/header-logo-white.png");
           </div>
         </div>
       
+      <section id="promo">
       <div class="container">
         <div class="row">
-          <div class="col-12"><a href="https://www.youtube.com/watch?v=777CTBZh_Y4&list=PLcsq2jjTfJ_r0q1zxNsKjcYl1-KhGeig" data-lity="data-lity"><img src="assets/img/Vignette vido.png" class="img-container" alt="You Tube"></a></div>
+          <div class="col-12"><a class="movie-link-main" href="https://www.youtube.com/watch?v=777CTBZh_Y4&list=PLcsq2jjTfJ_r0q1zxNsKjcYl1-KhGeig" data-lity="data-lity"><img src="assets/img/Vignette vido.png" class="img-container" alt="You Tube"><div class="movie-play-main"><div class="button-center">▶︎</div></div></a></div>
           </div>
         </div>
+        </section>
       
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">00000000</div>
-          <div class="col-sm-4">00000000</div>
-          <div class="col-sm-4">00000000</div>
+      <section id="interview">
+        <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card">
+          <a class="movie-link" href="https://www.youtube.com/watch?v=777CTBZh_Y4&list=PLcsq2jjTfJ_r0q1zxNsKjcYl1-KhGeig" data-lity="data-lity"><img class="card-img-top" src="assets/img/Konner-Card-1174x792px.jpg" alt="Konner"><div class="movie-play"><div class="button-center">▶︎</div></div></a>
+          <div class="card-body">
+            <h4 class="card-title">Meet Konner</h4>
+            <p class="card-text">Student at Stsnford University</p>
+            <a href="#" class="btn btn-primary">詳細を見る</a>
           </div>
         </div>
-      <div class="container">
-        
-        <p><a href="https://www.youtube.com/watch?v=777CTBZh_Y4&list=PLcsq2jjTfJ_r0q1zxNsKjcYl1-KhGeig" data-lity="data-lity">動画を見る</a></p>
-        
-        
-          
-        <!--                 end buttons		         -->
-        <div class="space-50"></div>
-        <!--                 inputs -->
-        <div id="inputs">
-          <div class="title">
-            <h3>Inputs</h3>
-          </div>
-          <div class="row">
-            <div class="col-lg-3 col-sm-4">
-              <div class="form-group has-default">
-                <input type="text" class="form-control" placeholder="Regular">
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-              <div class="form-group">
-                <label for="exampleInput1" class="bmd-label-floating">With Floating Label</label>
-                <input type="email" class="form-control" id="exampleInput1">
-                <span class="bmd-help">We'll never share your email with anyone else.</span>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-              <div class="form-group has-success">
-                <label for="exampleInput2" class="bmd-label-floating">Success input</label>
-                <input type="text" class="form-control" id="exampleInput2">
-                <span class="form-control-feedback">
-                  <i class="material-icons">done</i>
-                </span>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-              <div class="form-group has-danger">
-                <label for="exampleInput3" class="bmd-label-floating">Error input</label>
-                <input type="email" class="form-control" id="exampleInput3">
-                <span class="form-control-feedback">
-                  <i class="material-icons">clear</i>
-                </span>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">group</i>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="With Material Icons">
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="fa fa-group"></i>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="With Font Awesome Icons">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--                 end inputs -->
-        <div class="space-70"></div>
-        <!--                 textarea/checkbox/radio/toggle -->
-        <div id="checkRadios">
-          <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="title">
-                <h3>Checkboxes</h3>
-              </div>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" value="">
-                  Unchecked
-                  <span class="form-check-sign">
-                    <span class="check"></span>
-                  </span>
-                </label>
-              </div>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" value="" checked>
-                  Checked
-                  <span class="form-check-sign">
-                    <span class="check"></span>
-                  </span>
-                </label>
-              </div>
-              <div class="form-check disabled">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" value="" disabled>
-                  Disabled unchecked
-                  <span class="form-check-sign">
-                    <span class="check"></span>
-                  </span>
-                </label>
-              </div>
-              <div class="form-check disabled">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" value="" disabled checked>
-                  Disabled checked
-                  <span class="form-check-sign">
-                    <span class="check"></span>
-                  </span>
-                </label>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="title">
-                <h3>Radio Buttons</h3>
-              </div>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                  Radio is off
-                  <span class="circle">
-                    <span class="check"></span>
-                  </span>
-                </label>
-              </div>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
-                  Radio is on
-                  <span class="circle">
-                    <span class="check"></span>
-                  </span>
-                </label>
-              </div>
-              <div class="form-check disabled">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios11" value="option1" disabled>
-                  Disabled radio is off
-                  <span class="circle">
-                    <span class="check"></span>
-                  </span>
-                </label>
-              </div>
-              <div class="form-check disabled">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="exampleRadio1" id="exampleRadios21" value="option2" checked disabled>
-                  Disabled radio is on
-                  <span class="circle">
-                    <span class="check"></span>
-                  </span>
-                </label>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="title">
-                <h3>Toggle Buttons</h3>
-              </div>
-              <div class="togglebutton">
-                <label>
-                  <input type="checkbox" checked="">
-                  <span class="toggle"></span>
-                  Toggle is on
-                </label>
-              </div>
-              <div class="togglebutton">
-                <label>
-                  <input type="checkbox">
-                  <span class="toggle"></span>
-                  Toggle is off
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="space-70"></div>
-        <!--    progress/sliders -->
-        <div id="progress">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="title">
-                <h3>Progress Bars</h3>
-              </div>
-              <div class="progress progress-line-primary">
-                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
-                  <span class="sr-only">60% Complete</span>
-                </div>
-              </div>
-              <div class="progress progress-line-info">
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                  <span class="sr-only">60% Complete</span>
-                </div>
-              </div>
-              <div class="progress progress-line-danger">
-                <div class="progress-bar progress-bar-success" style="width: 35%">
-                  <span class="sr-only">35% Complete (success)</span>
-                </div>
-                <div class="progress-bar progress-bar-warning" style="width: 20%">
-                  <span class="sr-only">20% Complete (warning)</span>
-                </div>
-                <div class="progress-bar progress-bar-danger" style="width: 10%">
-                  <span class="sr-only">10% Complete (danger)</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="title">
-                <h3>Pagination</h3>
-              </div>
-              <ul class="pagination pagination-primary">
-                <!--
-                            color-classes: "pagination-primary", "pagination-info", "pagination-success", "pagination-warning", "pagination-danger"
-                        -->
-                <li class="page-item"><a href="javascript:void(0);" class="page-link">1</a></li>
-                <li class="page-item"><a href="javascript:void(0);" class="page-link">...</a></li>
-                <li class="page-item"><a href="javascript:void(0);" class="page-link">5</a></li>
-                <li class="page-item"><a href="javascript:void(0);" class="page-link">6</a></li>
-                <li class="active page-item"><a href="javascript:void(0);" class="page-link">7</a></li>
-                <li class="page-item"><a href="javascript:void(0);" class="page-link">8</a></li>
-                <li class="page-item"><a href="javascript:void(0);" class="page-link">9</a></li>
-                <li class="page-item"><a href="javascript:void(0);" class="page-link">...</a></li>
-                <li class="page-item"><a href="javascript:void(0);" class="page-link">12</a></li>
-              </ul>
-              <ul class="pagination pagination-info">
-                <li class="page-item"><a href="javascript:void(0);" class="page-link"> prev</a></li>
-                <li class="page-item"><a href="javascript:void(0);" class="page-link">1</a></li>
-                <li class="page-item"><a href="javascript:void(0);" class="page-link">2</a></li>
-                <li class="active page-item"><a href="javascript:void(0);" class="page-link">3</a></li>
-                <li class="page-item"><a href="javascript:void(0);" class="page-link">4</a></li>
-                <li class="page-item"><a href="javascript:void(0);" class="page-link">5</a></li>
-                <li class="page-item"><a href="javascript:void(0);" class="page-link">next </a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!--                 end progress -->
-        <!--                 sliders -->
-        <div id="sliders">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="title">
-                <h3>Sliders</h3>
-              </div>
-              <div id="sliderRegular" class="slider"></div>
-              <div id="sliderDouble" class="slider slider-info"></div>
-            </div>
-            <div class="col-md-6 ml-auto">
-              <div class="title">
-                <h3>Badges </h3>
-              </div>
-              <span class="badge badge-pill badge-secondary">Default</span>
-              <span class="badge badge-pill badge-primary">Primary</span>
-              <span class="badge badge-pill badge-info">Info</span>
-              <span class="badge badge-pill badge-success">Success</span>
-              <span class="badge badge-pill badge-warning">Warning</span>
-              <span class="badge badge-pill badge-danger">Danger</span>
-              <span class="badge badge-pill badge-rose">Rose</span>
-            </div>
-          </div>
-        </div>
-        <!--                 end sliders -->
       </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <a class="movie-link" href="https://www.youtube.com/watch?v=777CTBZh_Y4&list=PLcsq2jjTfJ_r0q1zxNsKjcYl1-KhGeig" data-lity="data-lity"><img class="card-img-top" src="assets/img/Lucy-Card-1174x792px.jpg" alt="Lucky"><div class="movie-play"><div class="button-center">▶︎</div></div></a>
+          
+          <div class="card-body">
+            <h4 class="card-title">Meet Lucky</h4>
+            <p class="card-text">Physiotherapist in Sao Paulo</p>
+            <a href="#" class="btn btn-primary">詳細を見る</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <a class="movie-link" href="https://www.youtube.com/watch?v=777CTBZh_Y4&list=PLcsq2jjTfJ_r0q1zxNsKjcYl1-KhGeig" data-lity="data-lity"><img class="card-img-top" src="assets/img/Ali-Card-1174x792px.jpg" alt="All"><div class="movie-play"><div class="button-center">▶︎</div></div></a>
+         
+          <div class="card-body">
+            <h4 class="card-title">Meet All</h4>
+            <p class="card-text">UK's first diabetic professional boxer</p>
+            <a href="#" class="btn btn-primary">詳細を見る</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>        
+        
+<section id="recipe">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card">
+          <img class="card-img-top" src="images/notepc-wp.jpeg" alt="ライトコースのイメージ画像">
+          <div class="card-body">
+            <h4 class="card-title">ライトコース</h4>
+            <p class="card-text">ホームページ・ブログ開設など基礎を身に付けたい方向けコースです。</p>
+            <a href="#" class="btn btn-primary">詳細を見る</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <img class="card-img-top" src="images/notepc-graph.jpeg" alt="スタンダードコースのイメージ画像">
+          <div class="card-body">
+            <h4 class="card-title">スダンダードコース</h4>
+            <p class="card-text">ホームページ作成・Web集客を一通り習得したい方向けです。</p>
+            <a href="#" class="btn btn-primary">詳細を見る</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <img class="card-img-top" src="images//e-learning.jpeg" alt="プロフェッショナルコースのイメージ画像">
+          <div class="card-body">
+            <h4 class="card-title">プロフェッショナルコース</h4>
+            <p class="card-text">より制作技術をしっかり身につけたい方向けの徹底コースです。</p>
+            <a href="#" class="btn btn-primary">詳細を見る</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <img class="card-img-top" src="images//e-learning.jpeg" alt="プロフェッショナルコースのイメージ画像">
+          <div class="card-body">
+            <h4 class="card-title">プロフェッショナルコース</h4>
+            <p class="card-text">より制作技術をしっかり身につけたい方向けの徹底コースです。</p>
+            <a href="#" class="btn btn-primary">詳細を見る</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="motion">
+        
+        
+      <div class="container">
+      	<div class="row">
+      		<div class="col-sm-3">
+      			<div class="card"> <img class="card-img-top" src="images/notepc-wp.jpeg" alt="ライトコースのイメージ画像">
+      				<div class="card-body">
+      					<h4 class="card-title">ライトコース</h4>
+      					<p class="card-text">ホームページ・ブログ開設など基礎を身に付けたい方向けコースです。</p>
+      					<a href="#" class="btn btn-primary">詳細を見る</a></div>
+     				</div>
+     			</div>
+      		<div class="col-sm-3">
+      			<div class="card"> <img class="card-img-top" src="images/notepc-graph.jpeg" alt="スタンダードコースのイメージ画像">
+      				<div class="card-body">
+      					<h4 class="card-title">スダンダードコース</h4>
+      					<p class="card-text">ホームページ作成・Web集客を一通り習得したい方向けです。</p>
+      					<a href="#" class="btn btn-primary">詳細を見る</a></div>
+     				</div>
+     			</div>
+      		<div class="col-sm-3">
+      			<div class="card"> <img class="card-img-top" src="images//e-learning.jpeg" alt="プロフェッショナルコースのイメージ画像">
+      				<div class="card-body">
+      					<h4 class="card-title">プロフェッショナルコース</h4>
+      					<p class="card-text">より制作技術をしっかり身につけたい方向けの徹底コースです。</p>
+      					<a href="#" class="btn btn-primary">詳細を見る</a></div>
+     				</div>
+     			</div>
+      		<div class="col-sm-3">
+      			<div class="card"> <img class="card-img-top" src="images//e-learning.jpeg" alt="プロフェッショナルコースのイメージ画像">
+      				<div class="card-body">
+      					<h4 class="card-title">プロフェッショナルコース</h4>
+      					<p class="card-text">より制作技術をしっかり身につけたい方向けの徹底コースです。</p>
+      					<a href="#" class="btn btn-primary">詳細を見る</a></div>
+     				</div>
+     			</div>
+     		</div>
+     	</div>
+        </section>
+        
+
+      
     </div>
 <!-- 	            end nav tabs -->
     <!--        notifications -->
@@ -478,6 +337,27 @@ $(".imgbox img").attr("src", "assets/img/header-logo-white.png");
       }
     }
   </script>
+  <script>
+  $(function(){
+  var pagetop = $('#page_top');
+  // ボタン非表示
+  pagetop.hide();
+
+  // 100px スクロールしたらボタン表示
+  $(window).scroll(function () {
+     if ($(this).scrollTop() > 100) {
+          pagetop.fadeIn();
+     } else {
+          pagetop.fadeOut();
+     }
+  });
+  pagetop.click(function () {
+     $('body, html').animate({ scrollTop: 0 }, 500);
+     return false;
+  });
+});  
+    </script>
+  
 </body>
 
 </html>
