@@ -14773,12 +14773,12 @@ textarea {
 }
 
 .navbar .navbar-brand {
-  position: relative;
-  color: inherit;
-  height: 50px;
-  font-size: 1.125rem;
-  line-height: 30px;
-  padding: 0.625rem 0;
+	position: relative;
+	color: inherit;
+	height: 40px;
+	/* [disabled]font-size: 1.125rem; */
+	line-height: 30px;
+	padding: 0rem 0;
 }
 
 .navbar.bg-primary {
